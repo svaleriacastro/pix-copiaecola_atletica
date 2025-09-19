@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pix Copia e Cola</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f7f7f7;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .pix-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      max-width: 600px;
+      word-wrap: break-word;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pix Copia e Cola</h1>
+  <p>Copie este código e cole no app do seu banco:</p>
+  <div class="pix-box" id="pixCode">
+    00020101021126360014br.gov.bcb.pix011449837150000143520400005303986540510.005802BR5905AASCI6009SAO PAULO622905251K5FCXC083TCCMVYK5JSM245E6304142F
+  </div>
+  <button onclick="copyPix()">📋 Copiar Código Pix</button>
+
+  <script>
+    function copyPix() {
+      const pixCode = document.getElementById("pixCode").innerText;
+      navigator.clipboard.writeText(pixCode).then(() => {
+        alert("✅ Código Pix copiado com sucesso!");
+      });
+    }
+  </script>
+</body>
+</html>
