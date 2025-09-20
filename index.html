@@ -77,7 +77,6 @@
       border-radius:999px;
       margin-bottom:16px;
     }
-
     .pix-box{
       margin: 12px auto 12px;
       max-width: 680px;
@@ -92,75 +91,6 @@
       word-break: break-all;
       color:#333;
     }
-
     .btn{
       margin-top:10px;
-      padding:12px 22px;
-      font-size:16px;
-      font-weight:700;
-      background: var(--verde-botao);
-      color:#fff;
-      border:none;
-      border-radius:10px;
-      cursor:pointer;
-      box-shadow: 0 4px 10px rgba(46, 204, 113, .35);
-      transition: transform .05s ease, background .2s ease;
-    }
-    .btn:hover{ background: var(--verde-botao-h); }
-    .btn:active{ transform: translateY(1px); }
-
-    .rodape{
-      margin-top:18px;
-      font-size:12.5px;
-      opacity:.8;
-    }
-  </style>
-</head>
-<body>
-  <main class="card" role="main">
-    <div class="topo">
-      <!-- Suba sua imagem ao repositório com o nome logo_atletica.png -->
-      <img class="logo" src="Logo_Atletica.png" alt="Logo da Atlética São Camilo" />
-      <h1>Setembro Amarelo</h1>
-    </div>
-
-    <div class="sub">Mês de prevenção ao suicídio</div>
-
-    <p class="mensagem">
-      <strong>Pix de 10 reais da Rifa</strong> para apoiar o <strong>Centro de Valorização da Vida (CVV)</strong> a continuar salvando vidas.
-    </p>
-
-    <div class="ligue">Centro de Valorização a Vida 📞 Ligue <strong>188</strong></div>
-
-    <p>Copie este código e cole no app do seu banco (Pix Copia e Cola):</p>
-
-    <div id="pixCode" class="pix-box" aria-label="Código Pix Copia e Cola">
-00020101021126360014br.gov.bcb.pix011449837150000143520400005303986540510.005802BR5905AASCI6009SAO PAULO622905251K5FCXC083TCCMVYK5JSM245E6304142F
-    </div>
-
-    <button class="btn" onclick="copyPix()">📋 Copiar Código Pix</button>
-
-    <div class="rodape">
-      Associação Atlética Acadêmica São Camilo • Solidariedade e prevenção salvam vidas
-    </div>
-  </main>
-
-  <script>
-    function copyPix(){
-      const code = document.getElementById("pixCode").innerText.trim();
-      navigator.clipboard.writeText(code).then(()=>{
-        alert("✅ Código Pix copiado! Cole no seu app do banco em Pix Copia e Cola.");
-      }).catch(()=>{
-        // fallback simples
-        const range = document.createRange();
-        range.selectNode(document.getElementById("pixCode"));
-        const sel = window.getSelection();
-        sel.removeAllRanges(); sel.addRange(range);
-        document.execCommand("copy");
-        sel.removeAllRanges();
-        alert("✅ Código Pix copiado! Cole no seu app do banco em Pix Copia e Cola.");
-      });
-    }
-  </script>
-</body>
-</html>
+      pa
